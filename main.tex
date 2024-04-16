@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{tocbibind}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{第\ \thesection 章}{1em}{}
+\setcounter{tocdepth}{2}
+% "Contents" を "目次" に変更
+\renewcommand{\contentsname}{目次}
+
+% 図のキャプションを「Figure」から「図」に変更
+\captionsetup[figure]{labelformat=simple, labelsep=space, name=図}
+\captionsetup[table]{name=表}
+
+\begin{document}
+\onehalfspacing
+
+
+\begin{titlepage}
+\centering
+\vspace*{60pt}
+{\Large 令和５年度　卒業研究論文}\\[50pt]
+{\Large \textbf{カーレースゲームを用いた深層強化学習による\\安全運転の設計と開発}}\\[120pt]
+{\Large 電子情報工学科}\\[50pt]
+{\Large 学生氏名　レオラ　デイビット\\指導教員　越野　亮}\\[50pt]
+{\Large 令和６年２月２０日　提出}
+\end{titlepage}
+
+\newpage
+\section*{要旨}
+世界の多くの国々，特に発展途上国では，車やバイクが非常に多いが，交通ルールがしっかり守られていないことがよくある．この問題は，交通のインフラが十分でないことや，交通法規を厳しく守ることが不足しているために起きている．これにより，混雑した道路での危険な運転行動が増え，交通事故のリスクが高まっている．
+
+特に，速く運転することは非常に危険である．速い速度で運転すると，反応時間が短くなり，予期せぬ障害物に対処する能力が低下する．これは，事故が起きた時に，より深刻な結果を招く原因となる．車やバイクが多く，安全対策が不十分で，速く運転する人が多いことが，交通事故を引き起こす大きな原因となっている．そのため，より良い道路のインフラを整えること，法律を厳しく守ること，そして，安全運転についての意識を高めることが重要である．
+
+
+\section*{Abstract}
+In many developing countries, the sharp increase in cars and motorcycles outpaces the enforcement of traffic regulations, leading to hazardous road conditions. Often, this problem stems from inadequate transportation infrastructure and poor traffic law enforcement, which allows dangerous driving behaviors to proliferate, especially in congested areas. This situation increases the risk of accidents, particularly at high speeds, which reduces a driver's reaction time and makes it harder to avoid sudden obstacles, leading to more severe accidents. The combination of high vehicle density, insufficient road safety measures, and a tendency towards speeding creates a high risk for traffic incidents. This underscores the urgent need for comprehensive road safety strategies that include improved infrastructure, stricter law enforcement, and increased public awareness of safe driving practices.
+
+\newpage
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+\tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+
+\newpage
+\input{chapter1.tex}
+
+\newpage
+\input{chapter2.tex}
+
+\newpage
+\input{chapter3.tex}
+
+\newpage
+\input{chapter4.tex}
+
+\newpage
+\input{chapter5.tex}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
+
+\newpage
+\input{shaji.tex}
+
+\newpage
+\printbibliography[title=参考文献]
+\addcontentsline{toc}{section}{参考文献}
+
+\end{document}
