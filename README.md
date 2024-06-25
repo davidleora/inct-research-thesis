@@ -35,4 +35,4 @@ This repository is intended for academic purposes and documents my research proc
 
 ### 石川工業高等専門学校 電子情報工学科 卒業論文
 
-_Last updated: 2024/05/29_
+_Last updated: 2024/04/17_
